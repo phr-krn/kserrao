@@ -65,17 +65,16 @@ body, html {
  .produto {
   display: flex;
   flex-direction: column;
-  align-items: left; /* Centraliza os itens */
-  text-align: left;
+  align-items: left; 
   margin-bottom: 16px;
 }
 
 .imagem-produto {
-  width: 120px; /* Ajuste conforme necessário */
+  width: 120px; 
   height: 120px;
   object-fit: cover;
   border-radius: 8px;
-  margin-bottom: 8px; /* Espaço entre a imagem e o texto */
+  margin-bottom: 8px; 
 }
 
 .info-produto {
@@ -227,13 +226,15 @@ body, html {
 }
 
 
-  @media (max-width: 768px) {
-    header {
-      font-size: 1.5rem;
-    }
-    .logo {
-      max-width: 70px;
-    }
+.logo img {
+  max-width: 200px; 
+  height: auto;
+  display: block;
+  margin: 0 auto; 
+}
 
-
+@media (max-width: 768px) {
+  .logo img {
+    max-width: 120px; 
   }
+}
