@@ -226,7 +226,7 @@ body, html {
 }
 
 
-.logo img {
+.logo {
   max-width: 200px; 
   height: auto;
   display: block;
@@ -234,7 +234,7 @@ body, html {
 }
 
 @media (max-width: 768px) {
-  .logo img {
-    max-width: 120px; 
+  .logo {
+    max-width: 120px;
   }
 }
