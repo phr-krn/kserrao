@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karen Serrão Confeitaria Artesanal</title>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <link rel="stylesheet" href="src/css/syle.css">
+   
+
+
+</head>
+
+<body>
+
+<div class="barra_superior_oculta_pequena">
+  <div class="barra_navegacao_grande barra_preta opacidade barra_hover_opacidade_off" id="minhaBarra">
+    <a href="#" class="item_barra botao_barra">HOME</a>
+    <a href="#menu" class="botaoinicio item_barra botao_barra">MENU</a>
+    <a href="#sobre" class="botaoinicio item_barra botao_barra">SOBRE</a>
+    <a href="#meuMapa" class="botaoinicio item_barra botao_barra">CONTATO</a>
+  </div>
+</div>
+    
+  
+<header class="imagem_fundo" id="inicio">
+  <div class="display_centro_meio centro">
+      <img class="logo" src="src/imagem/kserra.jpg" alt="Logo">
+      <p><a href="#menu" class="botaoinicio botao muito_grande preto">Vamos ver o Menu</a></p>
+  </div>
+</header>
+
+
+<div class="container Brigadeiro" id="menu">
+  <div class="conteudo">
+    <h1 class="titulomenu" style="margin-bottom:64px">NOSSO MENU</h1>
+    <div class="linha centro borda borda_cinza_escura">
+      <a href="javascript:void(0)" onclick="abrirMenu(event, 'Cookie');" id="meuLink">
+        <div class="link_aba produtos vermelho">Cookie</div>
+      </a>
+      <a href="javascript:void(0)" onclick="abrirMenu(event, 'Brigadeiro');">
+        <div class="link_aba produtos vermelho">Brigadeiro</div>
+      </a>
+      <a href="javascript:void(0)" onclick="abrirMenu(event, 'Bolo');">
+        <div class="link_aba produtos vermelho">Bolos e Brownies</div>
+      </a>
+    </div>
+
+    <div id="Cookie" class="Cookie container menu_ocultar">
+      <div class="produto">
+        <img src="src/imagem/cookie rech choco.jpg" alt="Cookie Clássico" class="imagem-produto">
+        <h1><b>Cookie Clássico</b> <span class="direita tag">R$13.00</span></h1>
+        <p class="texto_cinza">Cookies recheado com chocolate e massa amanteigada</p>
+      </div>
+      <hr>
+      <div class="produto">
+        <img src="src/imagem/red velvet.jpg" alt="Cookie Red Velvet" class="imagem-produto">
+        <h1><b>Cookie Red Velvet</b> <span class="direita tag">R$14.00</span></h1>
+        <p class="texto_cinza">Massa red velvet com pedaços de chocolate branco</p>
+      </div>
+      <hr>
+      <div class="produto">
+        <img src="src/imagem/cookie recheado chocolate branco.jpg" alt="Cookie Red Velvet" class="imagem-produto">
+        <h1><b>Cookie de Chocolate Branco</b> <span class="direita tag">R$14.00</span></h1>
+        <p class="texto_cinza">Cookies recheado com chocolate branco e massa amanteigada</p>
+      </div>
+    </div>
+
+    
+    <div id="Brigadeiro" class="Brigadeiro container menu_ocultar">
+      <div class="produto">
+        <img src="src/imagem/brigad churro.jpg" alt="Brigadeiro Tradicional" class="imagem-produto">
+        <h1><b>Brigadeirode Churros</b> <span class="direita tag">R$7.00/Unidade</span></h1>
+        <p class="texto_cinza">Brigadeiro de churros e caramelo</p>
+      </div>
+      <hr>
+      <div class="produto">
+        <img src="src/imagem/BRIGAD COM M&M.jpg" alt="Brigadeiro Gourmet" class="imagem-produto">
+        <h1><b>Brigadeiro de Chocolate com M&M's</b> <span class="direita tag">R$7.00/Unidade</span></h1>
+        <p class="texto_cinza">Brigadeiro tradicional coberto com granulados coloridos e com M&M'S</p>
+      </div>
+    </div>
+
+    <div id="Bolo" class="Bolo container menu_ocultar">
+      <div class="produto">
+        <img src="src/imagem/bolo brigadeiro.jpg" alt="Bolo de Cenoura" class="imagem-produto">
+        <h1><b>Bolo De Brigadeiro</b> <span class="direita tag">R$50.50</span></h1>
+        <p class="texto_cinza">Bolo de Brigadeiro Tradicional</p>
+      </div>
+      <hr>
+      <div class="produto">
+        <img src="src/imagem/bolo coco.jpg" alt="Bolo de Morango" class="imagem-produto">
+        <h1><b>Bolo de Coco</b> <span class="direita tag">R$52.00</span></h1>
+        <p class="texto_cinza">Bolo de Coco</p>
+        <hr>
+        
+      </div>
+      <div class="produto">
+        <img src="src/imagem/Bento cake.jpg" alt="Bolo de Morango" class="imagem-produto">
+        <h1><b>Bento Cake</b> <span class="direita tag">R$52.00</span></h1>
+        <p class="texto_cinza">Bolo recheado estilo Bento do sabor que preferir</p>
+        <hr>
+        
+      </div>
+      <div class="produto">
+        <img src="src/imagem/brownie.jpg" alt="Bolo de Morango" class="imagem-produto">
+        <h1><b>Brownie Tradicional</b> <span class="direita tag">R$17.00</span></h1>
+        <p class="texto_cinza">Brownie Tradicional de chocolate</p>
+        <hr>
+        
+      </div>
+    </div>
+    <br>
+  </div>
+</div>
+
+
+<div class="container vermelho" id="sobre">
+  <div class="conteudo">
+    <h1 class="centro" style="margin-bottom:64px">Sobre</h1>
+    <p class="sobre2">A confeitaria artesanal nasceu para oferecer doces e bolos de alta qualidade, feitos com amor e ingredientes selecionados. Inspirada em receitas tradicionais, trazemos o sabor da felicidade a cada mordida.</p>
+    <p class="Karen"><strong>Nossa Chef?</strong> Karen Serrão<img class="kafoto" src="src/imagem/kafoto.png" style="width:150px" class="circulo direita" alt="Chef"></p>
+    
+    <h2><b>Horário de Funcionamento</b></h2>
+    <div class="horario linha">
+      <div class="horarios">
+        <p>Todos os dias</p>
+        <p> Das 10:00hrs as 22:00hrs </p>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <p class="contato">Para encomendas ou informações, entre em contato através do nosso telefone ou e-mail!</p>
+  <p class="contato">TEL:(11)98383-7894</p>
+</div>
+
+
+<footer class="centro preto">
+  <p>Feito com amor</p>
+  
+</footer>
+
+<script>
+
+function abrirMenu(evt, nomeMenu) {
+  var i, x, abas;
+  x = document.getElementsByClassName("menu_ocultar");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  abas = document.getElementsByClassName("link_aba");
+  for (i = 0; i < x.length; i++) {
+     abas[i].className = abas[i].className.replace(" vermelho", "");
+  }
+  document.getElementById(nomeMenu).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " vermelho";
+}
+document.getElementById("meuLink").click();
+</script>
+
+</body>
+</html>
